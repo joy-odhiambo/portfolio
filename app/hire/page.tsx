@@ -14,12 +14,12 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "+254 746 157 232",
+    description: "+254 723 690 404",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "russel.odhiambo@students.ku.ac.ke",
+    description: "joy.odhiambo.hr@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,

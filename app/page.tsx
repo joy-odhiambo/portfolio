@@ -10,17 +10,19 @@ export default function Home() {
         <div className="container mx-auto h-full">
           <div className="flex flex-row xd:flex-col items-center justify-between pt-24 xd:pt-6">
             <div className="xd:text-center text-left xd:order-2 order-none">
-              <span className="text-sm">Software Developer</span>
+              <span className="text-sm">HR Generalist</span>
               <h1 className="h1 mb-6">
                 I&apos;m <br />{" "}
                 <span className="bg-gradient-to-r from-[#f29871] to-[#ff4d4d] text-transparent bg-clip-text">
                   {" "}
-                  Russell Odhiambo{" "}
+                  Joy Odhiambo{" "}
                 </span>
               </h1>
               <p className="max-w-[500px] mb-9 text-white/80 text-xl xd:text-[1rem]">
-                A passionate software developer with a deep love for C++ and a
-                strong command of Next.js, Python, and ROS2.
+                A dedicated HR Generalist with a passion for employee
+                engagement, a deep understanding of talent acquisition, and
+                strong expertise in performance management, HRIS, and
+                compliance.
               </p>
 
               <div className="flex items-center gap-6 xd:justify-center">
@@ -35,7 +37,7 @@ export default function Home() {
                   />
                 </Link>
                 <Link
-                  href="http://linkedin.com/in/russell-best"
+                  href="http://www.linkedin.com/in/joy-odhiambo"
                   target="_blank"
                 >
                   <Image

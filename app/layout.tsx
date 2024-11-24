@@ -16,8 +16,8 @@ const InputSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Russell Odhiambo",
-  description: "Software Developer",
+  title: "Joy Odhiambo",
+  description: "HR Generalist",
 };
 
 export default function RootLayout({
