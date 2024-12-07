@@ -19,10 +19,11 @@ export default function Home() {
                 </span>
               </h1>
               <p className="max-w-[500px] mb-9 text-white/80 text-xl xd:text-[1rem]">
-                A dedicated HR Officer with a passion for employee
-                engagement, a deep understanding of talent acquisition, and
-                strong expertise in performance management, HRIS, and
-                compliance.
+                A dedicated HR Officer who is committed to fostering a positive
+                work environment through effective talent management, employee
+                relations, and strategic workforce planning. I focus on aligning
+                human resources practices with business goals to drive
+                productivity and employee engagement.
               </p>
 
               <div className="flex items-center gap-6 xd:justify-center">
