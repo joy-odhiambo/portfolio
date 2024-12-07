@@ -124,9 +124,10 @@ export default function Hire() {
                   Let&apos;s work together
                 </h3>
                 <p className="text-white/60">
-                  If you&apos;re passionate about using your technical skills to
-                  make the world a safer, better place for everyone, I believe
-                  we could make a great team working toward that goal.
+                  If you&apos;re dedicated to building a thriving, compliant, and
+                  engaging workplace for your team, I believe we could form a
+                  strong partnership in creating the best HR experience,
+                  fostering growth, and driving success for your organization.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

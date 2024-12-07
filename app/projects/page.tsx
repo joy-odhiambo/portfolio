@@ -22,8 +22,9 @@ const projects = [
     num: "01",
     category: "HR Reports",
     title: "HR Reports",
-    description: "An online JavaScript & ReactJs IDE & Compiler.",
-    stack: [{ name: "Canva" }, { name: "Excel" }],
+    description:
+      "Recruitment strategies, Hiring Process, Candidate Sourcing, Interview Outcomes & Time to fill metrics.",
+    stack: [{ name: "Canva" }, { name: "Excel" }, { name: "Word" }],
     image: "/images/nexgen-recruitment-report-4.jpg",
     canva: "https://www.canva.com/design/DAGWz0pT0K8",
   },
@@ -31,8 +32,9 @@ const projects = [
     num: "02",
     category: "HR Reports",
     title: "HR Reports",
-    description: "An online web3 marketplace powered by Ethereum.",
-    stack: [{ name: "Canva" }, { name: "Excel" }],
+    description:
+      "Recruitment strategies, Hiring Process, Candidate Sourcing, Interview Outcomes & Time to fill metrics.",
+    stack: [{ name: "Canva" }, { name: "Excel" }, { name: "Word" }],
     image: "/images/nexgen-recruitment-report-2.jpg",
     canva: "https://www.canva.com/design/DAGWz0pT0K8",
   },
@@ -41,39 +43,28 @@ const projects = [
     category: "Employee Benefits",
     title: "Employee Benefits",
     description:
-      "A personal Blockchain network simulating Bitcoin's Consensus & Verification algorithms",
+      "Employee Benefits Packages, Employee Well being & Employee needs.",
     stack: [{ name: "Canva" }],
     image: "/images/employee-benefit.jpg",
     canva: "https://www.canva.com/design/DAGVIHjS_GI",
   },
   {
     num: "04",
-    category: "Employee Motivation",
-    title: "Employee Motivation",
+    category: "Annual Events",
+    title: "Annual Events",
     description:
-      "A personal Blockchain network simulating Bitcoin's Consensus & Verification algorithms",
-    stack: [{ name: "Canva" }],
-    image: "/images/gift-cards.jpg",
-    canva: "https://www.canva.com/design/DAGPUNDShhA",
+      "Public Holiday analysis & Employee Engagement",
+    stack: [{ name: "Canva" }, { name: "Calender" }],
+    image: "/images/nexgen-annual-events.jpg",
+    canva: "https://www.canva.com/design/DAGYU6i_21g",
   },
   {
     num: "05",
     category: "Annual Events",
     title: "Annual Events",
-    description:
-      "A personal Blockchain network simulating Bitcoin's Consensus & Verification algorithms",
-    stack: [{ name: "Canva" }],
+    description: "Public Holiday analysis & Employee Engagement",
+    stack: [{ name: "Canva" }, { name: "Calender" }],
     image: "/images/nexgen-annual-events-2.jpg",
-    canva: "https://www.canva.com/design/DAGYU6i_21g",
-  },
-  {
-    num: "06",
-    category: "Annual Events",
-    title: "Annual Events",
-    description:
-      "A personal Blockchain network simulating Bitcoin's Consensus & Verification algorithms",
-    stack: [{ name: "Canva" }],
-    image: "/images/nexgen-annual-events.jpg",
     canva: "https://www.canva.com/design/DAGYU6i_21g",
   },
 ];
@@ -167,7 +158,7 @@ export default function Projects() {
                             src={project.image}
                             fill
                             priority
-                            className="object-fill" 
+                            className="object-fill"
                             alt=""
                           />
                         </div>

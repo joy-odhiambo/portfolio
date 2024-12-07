@@ -47,7 +47,7 @@ export default function DesktopNav() {
       <a
         href={pdf_url}
         ref={anchor}
-        download="russell_resume.pdf"
+        download="joy_odhiambo_resume.pdf"
         className="hidden"
       />
       <div className="text-[1rem] text-[#a2a2a4]">
