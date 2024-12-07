@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import blogs from "../blog_blog";
 import Loader from "@/components/loader";
 
@@ -17,7 +17,13 @@ export default function Page({
 }) {
   const [show_loader, set_show_loader] = useState(true);
   const iframe = useRef<HTMLIFrameElement>(null);
-  const slug = use(params).slug;
+  const [slug, set_slug] = useState("");
+
+  useEffect(() => {
+    params.then((val) => {
+      set_slug(val.slug);
+    });
+  }, [params]);
 
   const iframeSettings = () => {
     if (iframe.current && iframe.current.contentDocument) {
@@ -37,19 +43,22 @@ export default function Page({
   return (
     <>
       {show_loader && <Loader />}
-      <div className="w-full h-screen py-4">
-        <iframe
-          ref={iframe}
-          src={`/api/proxy?url=${blogs[slug].url}`}
-          width="100%"
-          height="100%"
-          onLoad={() => {
-            iframeSettings();
-            set_show_loader(false);
-          }}
-          className={`${show_loader && "hidden"}`}
-        />
-      </div>
+
+      {slug && (
+        <div className="w-full h-screen py-4">
+          <iframe
+            ref={iframe}
+            src={`/api/proxy?url=${blogs[slug].url}`}
+            width="100%"
+            height="100%"
+            onLoad={() => {
+              iframeSettings();
+              set_show_loader(false);
+            }}
+            className={`${show_loader && "hidden"}`}
+          />
+        </div>
+      )}
     </>
   );
 }
