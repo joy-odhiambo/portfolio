@@ -5,7 +5,7 @@ import PageTransition from "@/components/page_transition";
 import { useEffect, useRef, useState } from "react";
 
 const url =
-  "https://docs.google.com/document/d/e/2PACX-1vSh94CGWIAHmbORvgovc2RQHybsm7lRQKRaD2EypQHCTN_fZXABxOlig33kDb0FBqDfpF4_j-mQ88nh/pub?embedded=true";
+  "https://docs.google.com/document/d/e/2PACX-1vTjGFEprhXaHmGjf5elCdlpLHEzJIdDz-4q_8TGCM4m7Rzna3kgmfX4NT4Z-KsqO4cYgOdeUDNLyfKD/pub?embedded=true";
 
 const style = `
 ::-webkit-scrollbar {

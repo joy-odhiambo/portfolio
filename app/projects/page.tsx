@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as swiper_t } from "swiper/types";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { SiCanva } from "react-icons/si";
 import {
   Tooltip,
   TooltipContent,
@@ -20,50 +20,61 @@ import { motion } from "framer-motion";
 const projects = [
   {
     num: "01",
-    category: "FullStack",
-    title: "Notebook",
+    category: "HR Reports",
+    title: "HR Reports",
     description: "An online JavaScript & ReactJs IDE & Compiler.",
-    stack: [
-      { name: "ReactJs" },
-      { name: "Typescript" },
-      { name: "Redux" },
-      { name: "es-build" },
-    ],
-    image: "/images/notebook.png",
-    live: "https://notebook-hazel.vercel.app/",
-    github: "https://github.com/ellrussbest/notebook",
+    stack: [{ name: "Canva" }, { name: "Excel" }],
+    image: "/images/nexgen-recruitment-report-4.jpg",
+    canva: "https://www.canva.com/design/DAGWz0pT0K8",
   },
   {
     num: "02",
-    category: "FullStack",
-    title: "Web3 Marketplace",
+    category: "HR Reports",
+    title: "HR Reports",
     description: "An online web3 marketplace powered by Ethereum.",
-    stack: [
-      { name: "Solidity" },
-      { name: "Next.Js" },
-      { name: "Tailwind" },
-      { name: "web3" },
-    ],
-    image: "/images/marketplace_eth.png",
-    live: "https://marketplace-eth-five.vercel.app/",
-    github: "https://github.com/ellrussbest/marketplace-eth",
+    stack: [{ name: "Canva" }, { name: "Excel" }],
+    image: "/images/nexgen-recruitment-report-2.jpg",
+    canva: "https://www.canva.com/design/DAGWz0pT0K8",
   },
   {
     num: "03",
-    category: "Blockchain",
-    title: "Blockchain Network",
+    category: "Employee Benefits",
+    title: "Employee Benefits",
     description:
       "A personal Blockchain network simulating Bitcoin's Consensus & Verification algorithms",
-    stack: [
-      { name: "ReactJs" },
-      { name: "Typescript" },
-      { name: "Jest" },
-      { name: "PubNub" },
-      { name: "Redis" },
-      { name: "ExpressJs" },
-    ],
-    image: "/images/blockchain.png",
-    github: "https://github.com/ellrussbest/Blockchain",
+    stack: [{ name: "Canva" }],
+    image: "/images/employee-benefit.jpg",
+    canva: "https://www.canva.com/design/DAGVIHjS_GI",
+  },
+  {
+    num: "04",
+    category: "Employee Motivation",
+    title: "Employee Motivation",
+    description:
+      "A personal Blockchain network simulating Bitcoin's Consensus & Verification algorithms",
+    stack: [{ name: "Canva" }],
+    image: "/images/gift-cards.jpg",
+    canva: "https://www.canva.com/design/DAGPUNDShhA",
+  },
+  {
+    num: "05",
+    category: "Annual Events",
+    title: "Annual Events",
+    description:
+      "A personal Blockchain network simulating Bitcoin's Consensus & Verification algorithms",
+    stack: [{ name: "Canva" }],
+    image: "/images/nexgen-annual-events-2.jpg",
+    canva: "https://www.canva.com/design/DAGYU6i_21g",
+  },
+  {
+    num: "06",
+    category: "Annual Events",
+    title: "Annual Events",
+    description:
+      "A personal Blockchain network simulating Bitcoin's Consensus & Verification algorithms",
+    stack: [{ name: "Canva" }],
+    image: "/images/nexgen-annual-events.jpg",
+    canva: "https://www.canva.com/design/DAGYU6i_21g",
   },
 ];
 
@@ -96,7 +107,7 @@ export default function Projects() {
                 </div>
 
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-[#ff4d4d] transition-all duration-500 capitalize">
-                  {project.category} project
+                  {project.category}
                 </h2>
 
                 <p className="text-white/60">{project.description}</p>
@@ -117,37 +128,23 @@ export default function Projects() {
 
                 <div className="border border-white/20"></div>
 
-                <div className="flex items-center gap-4">
-                  {project.live && (
-                    <Link href={project.live} target="_blank">
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-[70px] h-[70px] flex rounded-full bg-white/5 justify-center items-center group">
-                            <BsArrowUpRight className="text-white text-3xl group-hover:text-[#ff4d4d]" />
-                          </TooltipTrigger>
+                <Link
+                  href={project.canva}
+                  target="_blank"
+                  className="w-[70px] h-[70px]"
+                >
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full flex bg-white/5 justify-center items-center group">
+                        <SiCanva className="text-white text-3xl group-hover:text-[#ff4d4d]" />
+                      </TooltipTrigger>
 
-                          <TooltipContent>
-                            <p>Live Project</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </Link>
-                  )}
-
-                  <Link href={project.github} target="_blank">
-                    <TooltipProvider delayDuration={100}>
-                      <Tooltip>
-                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full flex bg-white/5 justify-center items-center group">
-                          <BsGithub className="text-white text-3xl group-hover:text-[#ff4d4d]" />
-                        </TooltipTrigger>
-
-                        <TooltipContent>
-                          <p>Github Repository</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
-                </div>
+                      <TooltipContent>
+                        <p>Canva Link</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
               </div>
             </div>
 
@@ -170,7 +167,7 @@ export default function Projects() {
                             src={project.image}
                             fill
                             priority
-                            className="object-cover"
+                            className="object-fill" 
                             alt=""
                           />
                         </div>

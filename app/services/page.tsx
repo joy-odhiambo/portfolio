@@ -3,39 +3,51 @@ import PageTransition from "@/components/page_transition";
 const services = [
   {
     num: "01",
-    title: "C++ Programming",
+    title: "Recruitment and Onboarding",
     description:
-      "Expert in advanced C++ techniques, including template metaprogramming, STL, and resource-safe development to build efficient, high-performance applications.",
+      "Streamlining the hiring process by identifying top talent through targeted recruitment strategies and conducting efficient interview processes. Facilitating seamless onboarding experiences to integrate new hires into the organization effectively, ensuring they are equipped to the tools and knowledge needed for success.",
   },
   {
     num: "02",
-    title: "Web Development",
+    title: "Compliance",
     description:
-      "Specializing in building high-performance, SEO-optimized web applications using modern JavaScript frameworks like React and Next.js.",
+    "Ensuring organizatinal adherence to labor laws, company policies and industry regulations. I specialize in maintaining accurate documentation, conducting regular internal audits and implementing best practices to fostrer a legally compliant and ethical workplace environment."
   },
   {
     num: "03",
-    title: "Desktop App Development",
+    title: "Perfomance Management",
     description:
-      "Creating intuitive, cross-platform desktop applications with robust GUIs using Qt and QML for seamless user experiences.",
-  },
+    "Developing and implementing perfomance managment systems to align individual and team goals with organizational objectives. This includes setting clear perfomance standards, conducting evaluations, providing constructive and continous feedback and supporting professional development to enhance productivity and employee growth."
+    },
   {
     num: "04",
-    title: "Code Review",
+    title: "Employee Engagement",
     description:
-      "Offering in-depth code reviews focused on performance, maintainability, and adherence to best practices, ensuring high-quality, bug-free software.",
+    "Fostering a positive workplace culture by implementing strategies to enhance employee satisfaction, motivation and involvement. This includes organizing team building activities, creating feedback mechanism and promoting open communication to drive commitment and productivity."
   },
   {
     num: "05",
-    title: "Teaching & Consultancy",
+    title: "HR Metrics & Analytics",
     description:
-      "Providing expert guidance and mentorship on software development, helping individuals and teams improve coding skills and project outcomes.",
-  },
+    "Leveraging data driven insights to measure and improve HR functions such as recruitment effectiveness, employee turnover and perfomance trends. By analyzing key metrics, I provide actionable recommendations to optimize workforce strategies and support organizational goals."
+    },
   {
     num: "06",
-    title: "ROS2 Development",
+    title: "Health & Safety",
     description:
-      "Designing and developing custom ROS2 nodes, working with ROS2 concepts like topics, services, and actions to create efficient robotic systems.",
+    "Promoting a safe and healthy workplace by developing and implementing policies, conducting risk assessments and ensuring compliance with occupational health and safety regulations. I also provide training and support to cultivate a culture of safety and wellbeing among the employees."
+  },
+  {
+    num: "07",
+    title: "Employee Compensation and Benefits",
+    description:
+    "Designing and managing competitive compensation structures and benefits programs to attract, retain, and motivate top talent. This includes salary benchmarking, overtime and allowances and ensuring compliance with regulatory requirements while aligning with organizational budgets and goals."
+  },
+  {
+    num: "08",
+    title: "Work-life Balance",
+    description:
+    "Creating initiatives and policies that support employees in achieving a healthy balance between their professional and personal lives. This includes flexible work arrangements, wellness programs, annual events, team building and fostering a supportive work environment to enhance overall job satisfaction and productivity."
   },
 ];
 
@@ -49,7 +61,7 @@ export default function Services() {
               return (
                 <div
                   key={index}
-                  className="flex flex-1 flex-col justify-center gap-6 group"
+                  className="flex flex-1 flex-col gap-6 group h-full justify-between relative"
                 >
                   <div className="text-5xl font-extrabold text-outline text-transparent">
                     {service.num}
@@ -61,7 +73,7 @@ export default function Services() {
                   <p className="text-base leading-8 text-white/60">
                     {service.description}
                   </p>
-                  <div className="border-b border-white/20 w-full"></div>
+                  <div className="border-b border-white/20 w-full bottom-[-20px] absolute"></div>
                 </div>
               );
             })}
