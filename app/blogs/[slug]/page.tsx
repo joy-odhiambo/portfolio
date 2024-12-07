@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import blogs from "../blog_blog";
 import Loader from "@/components/loader";
 
@@ -17,7 +17,11 @@ export default function Page({
 }) {
   const [show_loader, set_show_loader] = useState(true);
   const iframe = useRef<HTMLIFrameElement>(null);
-  const slug = use(params).slug;
+  let slug: string = "";
+
+  params.then((val) => {
+    slug = val.slug;
+  });
 
   const iframeSettings = () => {
     if (iframe.current && iframe.current.contentDocument) {
